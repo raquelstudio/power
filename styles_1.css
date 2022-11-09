@@ -1,0 +1,270 @@
+@font-face {
+  font-family: "ortica-bold" "ortica-light";
+  src: url("fonts/Ortica-Bold.woff2") format("woff2"),
+       url("fonts/Ortica-Bold.woff") format("woff"),
+       url("fonts/Ortica-Light.woff2") format("woff2"),
+       url("fonts/Ortica-Light.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  font-family: "ortica";
+  font-size: 19px;
+  display: flex;
+  width: 100vw;
+  height: 300vh;
+  overflow-x: hidden;
+  background: linear-gradient(white, #9285ff, #fd78ff, #ff6900);
+}
+
+.header{
+  padding: 0;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.box-left {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 70%;
+  height: 100%;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: black;
+}
+
+.box-left::-webkit-scrollbar {
+  width: 15px;
+  height: 100%;
+  background-color: none;
+  box-sizing: border-box;
+  border: solid 3px;
+}
+
+.box-left::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.box-right {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction:column;
+  align-items: stretch;
+  position: fixed;
+  right: 0;
+  width: 29%;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: black;
+}
+
+.box-right::-webkit-scrollbar {
+  width: 15px;
+  height: 100%;
+  background-color: none;
+  box-sizing: border-box;
+  border: solid 3px;
+}
+
+.box-right::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.about {
+  padding: 30px;
+  line-height: 0;
+  text-align: right;
+  font-weight: bolder;
+  margin-bottom: 108px;
+  box-sizing: border-box;
+}
+
+.index {
+  display: block;
+  padding: 5px;
+  box-sizing: border-box;
+  border-top: solid 3px;
+}
+
+.main-title {
+  font-size: 80px;
+  /*background-color: rgb(146, 133, 255);*/
+  padding: 20px;
+  font-weight: lighter;
+  line-height: 90%;
+  text-align: center;
+  margin-left: 170px;
+}
+
+.introduction {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 23% 78%;
+  align-items: center;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.intro {
+  padding: 0;
+  font-weight: lighter;
+  line-height: 140%;
+  margin-right: 80px;
+  box-sizing: border-box;
+  left: 100px;
+  box-sizing: border-box;
+}
+
+.theme-intro {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-offset: 0.3rem;
+  font-weight: bold;
+}
+
+.concept {
+  padding: 20px 0 20px 0;
+  display: grid;
+  grid-template-columns: 23% 78%;
+  align-items: center;
+  box-sizing: border-box;
+  border-top: solid 3px;
+}
+
+.final {
+  border-bottom: solid 3px;
+}
+
+.title {
+  padding: 0;
+  height: 140px;
+  transform: rotate(-90deg);
+  text-align: center;
+  line-height: 16px;
+  align-self: center;
+  color: black;
+  display: block;
+  align-self: center;
+}
+
+.theme {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-offset: 0.3rem;
+  font-weight: bolder;
+}
+
+.concept-name {
+  font-size: 30px;
+  font-weight: lighter;
+  line-height: 0;
+  text-align: center;
+}
+
+.definition {
+  padding: 0;
+  font-weight: lighter;
+  line-height: 140%;
+  margin-right: 80px;
+  box-sizing: border-box;
+}
+
+
+/*.advanced {
+  margin-left: 60px;
+}*/
+
+.nickname {
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-offset: 0.1rem;
+  font-size: 30px;
+}
+
+.footer {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 23% 78%;
+}
+
+.index {
+  margin-bottom: 10px;
+}
+
+.ref {
+  font-size: 12px;
+  font-weight: lighter;
+  line-height: 120%;
+  margin-top: 40px;
+  margin-right: 80px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.ref-title {
+  font-weight: bold;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-offset: 0.3rem;
+}
+
+.ref-content {
+  text-align: left;
+}
+
+.theme-index {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-offset: 0.3rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.index-name {
+  font-size: 28px;
+  font-weight: lighter;
+  line-height: 0;
+  text-align: center;
+}
+
+.subtitle {
+  font-weight: bolder;
+  text-align: center;
+  line-height: 0;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+span.link {
+  cursor: pointer;
+  font-weight: bolder;
+  text-decoration: underline solid;
+  text-underline-offset: 0.15rem;
+  font-weight: bold;
+}
+
+span.link:hover {
+  color: white;
+}
+
+.displayMe {
+  width: 250px;
+  position: absolute;
+  z-index: 100;
+}
+
+.displayMe img {
+  width: 100%;
+  box-shadow: 2px 2px 5px;
+}

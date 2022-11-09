@@ -1,0 +1,22 @@
+.popup-trigger {
+  display: inline-block;
+  color: white;
+  background-color: black;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.popup {
+  display: none;
+}
+
+.popup-trigger:hover .popup {
+  position: absolute;
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: teal;
+}
